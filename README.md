@@ -6,7 +6,7 @@ Create a tiny RESTful web service with the following business requirements:
   - list all approved loans
   - list all approved loans by user
 - Service must perform loan application validation according to the following rules and reject application if:
-  - Loan application comes from blacklisted personal id
+  - Application comes from blacklisted personal id
   - N loan application / second are received from a single country (essentially we want to limit number of loan applications coming from a country in a given timeframe)
 - Service must perform origin country resolution using the following web service and store country code together with the loan application. Because networking is unreliable and services tend to fail, let's agree on default country code - "lv".
 
